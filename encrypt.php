@@ -1,16 +1,14 @@
 ﻿<?php
-    /** 
-    *PHP加密函数
-    * 
-    *在PHP种能对数据进行加密的函数主要有crypt()、md5()和sha1(),还有加密扩展库Mcrypt和Mash。
-    * @author      Carlos Jiang<1097671986@qq.com> 
-    * @version     1.0
-    * @since       1.0 
-    */
-    $str = 'This is an exzample!';      //声明字符串变量$str
-    echo '加密前$str的值为：'.$str;
-    $crypttostr = crypt($str,rand());          //对变量$str加密
-    echo '<p>加密后$str的值为：'.$crypttostr;       //输出加密后的变量
+/** 
+*PHP加密函数
+* 
+*在PHP种能对数据进行加密的函数主要有crypt()、md5()和sha1(),还有加密扩展库Mcrypt和Mash。
+* @author      Carlos Jiang<1097671986@qq.com> 
+*/
+$str = 'This is an exzample!';      //声明字符串变量$str
+echo '加密前$str的值为：'.$str;
+$crypttostr = crypt($str,rand());          //对变量$str加密
+echo '<p>加密后$str的值为：'.$crypttostr;       //输出加密后的变量
 ?>
 
 <p>md5()函数使用MD5算法。MD5的全称是Message-Digest Algorithm 5（信息-摘要算法）。</p>
